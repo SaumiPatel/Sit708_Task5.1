@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:background="@color/purple_500"
+        app:title="iTube Home"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/youtubeUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YouTube URL"
+                android:inputType="textUri" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addToPlaylistBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TO PLAYLIST"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/purple_500"
+            app:strokeWidth="2dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/myPlaylistBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MY PLAYLIST"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout> 
